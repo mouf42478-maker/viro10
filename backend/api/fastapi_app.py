@@ -1,7 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 from typing import Optional, Dict, List
-import recommendation_service as rs
+from backend.integration import recommendation_service as rs
+
 
 app = FastAPI(title="EduGrant Finder API", version="2.0")
 
